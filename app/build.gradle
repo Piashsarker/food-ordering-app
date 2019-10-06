@@ -7,6 +7,9 @@ apply plugin: 'kotlin-android-extensions'
 // Plugin  for @link{ DataBinding }
 apply plugin: 'kotlin-kapt'
 
+// Adding the apply plugin statement for safeargs
+apply plugin: 'androidx.navigation.safeargs'
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -25,7 +28,7 @@ android {
     }
     // Enable DataBinding in this module no dependencies needed.
     dataBinding {
-        enabled true
+        enabled = true
     }
     compileOptions {
         sourceCompatibility = 1.8

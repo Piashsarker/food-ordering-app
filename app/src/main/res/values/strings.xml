@@ -30,4 +30,10 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="category_name">Fast Foods</string>
+    <string name="beef_slider">Beef Sliders</string>
+    <string name="price">100.00 BDT</string>
+    <string name="add">Add</string>
+    <string name="product_image">Product Image</string>
+    <string name="quantity">0</string>
+    <string name="food_item">Food Item</string>
 </resources>
