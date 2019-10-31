@@ -3,7 +3,9 @@ package com.mealsonwheels.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
@@ -30,13 +32,22 @@ class FoodItemAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         when (holder) {
             is FoodItemAdapter.ItemViewHolder -> {
                 holder.bind(items[position])
-                /**
-                 * Item Card Listener.
-                 */
+
 
                 holder.itemCard.setOnClickListener {
                     this.listener.onItemClicked(it, items[position])
                 }
+
+
+                holder.btnQuantityAdd.setOnClickListener {
+                    this.listener.onAddItem(it, items[position])
+                }
+                holder.btnQuantitySub.setOnClickListener {
+                    this.listener.onRemoveItem(it, items[position])
+                }
+
+
+
             }
         }
 
@@ -58,6 +69,9 @@ class FoodItemAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         val itemName: TextView = itemView.item_name
         val itemPrice:TextView = itemView.item_price
         val itemCard : CardView = itemView.food_item_card
+        val btnQuantityAdd: ImageButton = itemView.btn_quantity_add
+        val btnQuantitySub: ImageButton = itemView.btn_quantity_sub
+        val quantityLayout: LinearLayout = itemView.layout_quantity
 
         fun bind(foodItem: FoodItem) {
             itemName.text = foodItem.name
@@ -77,5 +91,7 @@ class FoodItemAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     interface ItemClickListener{
         fun onItemClicked(view: View, item:FoodItem)
+        fun onAddItem(view: View, item: FoodItem)
+        fun onRemoveItem(view: View, item: FoodItem)
     }
 }

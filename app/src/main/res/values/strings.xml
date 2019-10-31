@@ -2,11 +2,7 @@
     <string name="app_name">Meals On Wheels</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="title_activity_splash_screen">SplashScreenActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="login">Login</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
@@ -16,19 +12,9 @@
     <string name="enter_email">Email</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="title_activity_dashboard">DashboardActivity</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
     <string name="category_name">Fast Foods</string>
     <string name="beef_slider">Beef Sliders</string>
     <string name="price">100.00 BDT</string>
@@ -36,4 +22,36 @@
     <string name="product_image">Product Image</string>
     <string name="quantity">0</string>
     <string name="food_item">Food Item</string>
+    <string name="profile_name">Piash Sarker</string>
+    <string name="user_name">sarkerpt@gmail.com</string>
+    <string name="cart">CART</string>
+    <string name="cart_is_empty">Cart is empty,  Add items.</string>
+    <string name="ordering_from">Ordering From</string>
+    <string name="car_name">Mirpur 11, Car BCD</string>
+    <string name="address">BCB Chattor, Mirpur 12, Dhaka -1250</string>
+    <string name="deliver_to">Deliver to</string>
+    <string name="flat_or_road_number">Flat/Road No</string>
+    <string name="search_for_item">Search foods, reciepce..</string>
+    <string name="category">Foods Category</string>
+    <string name="drinks_and_beverages_meals">Special foods, Drinks, Juice</string>
+    <string name="delivery_charge">Delivery $60</string>
+    <string name="available_item">Available Items</string>
+    <string name="order_items">Order Items</string>
+    <string name="sub_total">Subtotal</string>
+    <string name="sub_total_amount">100.00 BDT</string>
+    <string name="total">Total</string>
+    <string name="vat">VAT(0.00%)</string>
+    <string name="vat_value">0.00 BDT</string>
+    <string name="service_charge">Service Charge</string>
+    <string name="service_charge_amount">0.00 BDT</string>
+    <string name="deliver_fee">Delivery Fee</string>
+    <string name="deliver_fee_amount">60.00 BDT</string>
+    <string name="discount">Discount</string>
+    <string name="discout_text">- 60.00 BDT</string>
+    <string name="confirm_order">CONFIRM ORDER</string>
+    <string name="order_confirmation">Order Confirmation</string>
+    <string name="order_history">Order History</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

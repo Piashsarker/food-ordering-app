@@ -2,7 +2,6 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
     app:startDestination="@+id/nav_home">
 
     <fragment
@@ -10,43 +9,27 @@
         android:name="com.mealsonwheels.ui.home.HomeFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_home">
+
         <action
             android:id="@+id/action_nav_home_to_foodItemFragment"
             app:destination="@id/foodItemFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.mealsonwheels.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.mealsonwheels.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-
-    <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.mealsonwheels.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
-
-    <fragment
-        android:id="@+id/nav_share"
-        android:name="com.mealsonwheels.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
-
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.mealsonwheels.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
-    <fragment
         android:id="@+id/foodItemFragment"
         android:name="com.mealsonwheels.ui.FoodItem.FoodItemFragment"
         android:label="@string/food_item"
-        tools:layout="@layout/fragment_food_item"></fragment>
+        tools:layout="@layout/fragment_food_item">
+        <argument
+            android:name="categoryId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_foodItemFragment_to_cartFramgent"
+            app:destination="@id/cartFramgent" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFramgent"
+        android:name="com.mealsonwheels.ui.CartFramgent"
+        android:label="@string/order_confirmation"
+        tools:layout="@layout/fragment_cart" />
 </navigation>

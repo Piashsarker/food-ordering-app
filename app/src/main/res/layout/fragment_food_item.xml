@@ -1,20 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:background="#f9f9f9"
+        android:background="@color/light_gray"
         android:orientation="vertical"
         android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/HeaderText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category_name"
+                    android:textAlignment="center" />
+
+                <TextView
+                    style="@style/SmallTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/drinks_and_beverages_meals"
+                    android:textAlignment="center" />
+
+                <TextView
+                    style="@style/SmallTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_charge"
+                    android:textAlignment="center"
+                    android:textColor="@color/red_dark" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="0dp">
+
+            <TextView
+                style="@style/NormalTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/available_item" />
+        </androidx.cardview.widget.CardView>
 
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
             android:id="@+id/food_item_recylerview"
             tools:listitem="@layout/row_food_item" />
 
+        <Button
+            android:id="@+id/btnGotoCart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/cart"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 </layout>

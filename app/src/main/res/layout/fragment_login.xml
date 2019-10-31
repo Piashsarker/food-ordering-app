@@ -1,138 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    tools:context=".ui.LoginFragment">
-
-
-    <RelativeLayout
-
-        android:id="@+id/activityMain"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg_design">
+        tools:context=".ui.auth.LoginFragment">
 
-        <androidx.cardview.widget.CardView
+
+        <RelativeLayout
+
+            android:id="@+id/activityMain"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="80dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="80dp"
-            app:cardCornerRadius="7dp"
-            app:cardElevation="22dp">
+            android:background="@drawable/bg_design">
 
-            <TextView
-                style="@style/TextStyle.Heading"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:layout_marginTop="60dp"
-                android:text="@string/login"
-                android:textAllCaps="true"
-                android:textSize="20sp" />
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="20dp"
-                android:orientation="vertical">
+                android:layout_centerInParent="true"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="22dp">
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColorHint="@color/gray"
-                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etEmail"
-                        style="@style/TextStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:background="@drawable/input_border_bottom"
-                        android:cursorVisible="true"
-                        android:gravity="center|left|bottom"
-                        android:hint="@string/email"
-                        android:inputType="textEmailAddress"
-                        android:maxLength="50"
-                        android:paddingBottom="10dp"
-                        android:textColor="@color/black_effective"
-                        android:textSize="18sp" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/password"
-                    android:textColorHint="@color/gray"
-                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
-                    app:passwordToggleEnabled="true">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etPassword"
-                        style="@style/TextStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginRight="20dp"
-                        android:background="@drawable/input_border_bottom"
-                        android:cursorVisible="true"
-                        android:gravity="center|left|bottom"
-                        android:inputType="textPassword"
-                        android:maxLength="50"
-                        android:paddingBottom="10dp"
-                        android:textColor="@color/black_effective"
-                        android:textSize="18sp" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <Button
-                    android:id="@+id/btnServerLogin"
-                    style="@style/Button.Primary"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_margin="15dp"
-                    android:onClick="@{()-> viewModel.loginOnClick()}"
-                    android:padding="10dp"
-                    android:text="@string/login"
-                    android:textSize="18dp" />
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextStyle.Heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
+                        android:layout_margin="16dp"
+                        android:text="@string/login"
+                        android:textAllCaps="true"
+                        android:textSize="20sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/gray"
+                        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etEmail"
+                            style="@style/InputTextStyle"
+                            android:hint="@string/email"
+                            android:inputType="textEmailAddress" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:textColorHint="@color/gray"
+                        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etPassword"
+                            style="@style/InputTextStyle"
+                            android:inputType="textPassword" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btnServerLogin"
+                        style="@style/Button.Primary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:text="@string/login"
+                        android:textSize="18sp" />
 
 
-                <Button
-                    android:id="@+id/btnSignup"
-                    style="@style/Button.Primary"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="15dp"
-                    android:onClick="signupOnClick"
-                    android:padding="10dp"
-                    android:text="@string/Signup"
-                    android:textSize="18dp" />
-            </LinearLayout>
+                    <Button
+                        android:id="@+id/btnSignup"
+                        style="@style/Button.Primary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:padding="10dp"
+                        android:text="@string/Signup"
+                        android:textSize="18sp" />
+                </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-    </RelativeLayout>
+        </RelativeLayout>
 
-    <androidx.core.widget.ContentLoadingProgressBar
-        android:id="@+id/address_looking_up"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:visibility="gone" />
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/address_looking_up"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
 
-</FrameLayout>
+    </FrameLayout>
+</layout>
 
 

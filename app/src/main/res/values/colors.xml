@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@color/blue_black_light</color>
-    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorPrimary">@color/navy_blue</color>
+    <color name="colorPrimaryDark">@color/navy_blue</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="light_gray">#dbdbdb</color>
-    <color name="gray">#7e7e7e</color>
-    <color name="semi_gray">#979797</color>
-    <color name="dark_gray">#696969</color>
-    <color name="bg_color">#f7f7f7</color>
-    <color name="black">#000000</color>
-    <color name="white">#ffffff</color>
-    <color name="black_effective">#2a2a2a</color>
+    <color name="gray">#DADADA</color>
+    <color name="bg_color">#f9f9f9</color>
+    <color name="white">#f9f9f9</color>
+    <color name="black_effective">#333333</color>
     <color name="shadow">#d0d8dc</color>
-    <color name="transparent">#00000000</color>
-    <color name="translucent_white">#88ffffff</color>
-    <color name="fb">#3b5998</color>
-    <color name="google">#d34836</color>
-    <color name="colorbacksplash">#FBFBFB</color>
+    <color name="color_back_splash">#FBFBFB</color>
 
 
     <!--Design colors-->
@@ -27,11 +19,6 @@
     <color name="cyan_dark">#70BDC6</color>
     <color name="navy_blue">#214258</color>
     <color name="navy_blue_dark">#1C3A4E</color>
-    <color name="light_green">#78DC96</color>
-    <color name="light_blue">#55C8F0</color>
-    <color name="blue_black_dark">#13171d</color>
-    <color name="blue_black_light">#516179</color>
-    <color name="blue_grey_light">#A5B4C8</color>
-    <color name="orange">#FFA500</color>
-    <color name="yellow">#fff44f</color>
+    <color name="light_gray">#f5f6f8</color>
+    <color name="divider_color">#f8f8f8f8</color>
 </resources>

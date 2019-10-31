@@ -8,6 +8,8 @@ class DataSource {
 
     companion object {
 
+        val cartItems: ArrayList<FoodItem> = ArrayList()
+
         fun getFoodCategories(): ArrayList<FoodCategory> {
             val list = ArrayList<FoodCategory>()
             list.add(FoodCategory("1", "Fast Food", R.drawable.fastfood))
@@ -28,6 +30,18 @@ class DataSource {
 
             return list
         }
+
+        fun addToCart(foodItem: FoodItem) {
+            cartItems.add(foodItem)
+        }
+
+        fun removeFromCart(foodItem: FoodItem) {
+            cartItems.remove(foodItem)
+        }
+
+
+
+
 
     }
 }

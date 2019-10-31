@@ -4,8 +4,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -52,7 +52,7 @@ class FoodCategoryAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     class BlogViewHolder constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val categoryImage: ImageView = itemView.category_image
         val categoryTitle: TextView = itemView.category_name
-        val categoryCard : CardView = itemView.category_card
+        val categoryCard: LinearLayout = itemView.category_card
 
         fun bind(category: FoodCategory) {
             categoryTitle.setText(category.name)

@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mealsonwheels.R
 import com.mealsonwheels.adapter.FoodItemAdapter
@@ -18,10 +19,11 @@ import kotlinx.android.synthetic.main.fragment_food_item.*
 
 class FoodItemFragment:Fragment(), FoodItemAdapter.ItemClickListener {
 
+
     private lateinit var fooditemViewModel:FoodItemViewModel
     private  lateinit var foodItemAdpter: FoodItemAdapter
-
     private lateinit var binding: FragmentFoodItemBinding
+    private lateinit var categoryId: String
 
 
     override fun onCreateView(
@@ -32,6 +34,14 @@ class FoodItemFragment:Fragment(), FoodItemAdapter.ItemClickListener {
         fooditemViewModel =
             ViewModelProviders.of(this).get(FoodItemViewModel::class.java)
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_food_item,container,false)
+        categoryId = FoodItemFragmentArgs.fromBundle(arguments!!).categoryId
+
+
+        binding.btnGotoCart.setOnClickListener {
+            findNavController().navigate(R.id.action_foodItemFragment_to_cartFramgent)
+        }
+
+
         return binding.root
     }
 
@@ -52,6 +62,15 @@ class FoodItemFragment:Fragment(), FoodItemAdapter.ItemClickListener {
 
     override fun onItemClicked(view: View, item: FoodItem) {
         Toast.makeText(activity,"Item Clikced "+item.name, Toast.LENGTH_LONG).show()
+    }
+
+    override fun onAddItem(view: View, item: FoodItem) {
+        Toast.makeText(activity, item.name + " added in Cart", Toast.LENGTH_LONG).show()
+        DataSource.addToCart(item)
+    }
+
+    override fun onRemoveItem(view: View, item: FoodItem) {
+        Toast.makeText(activity, item.name + " removed from Cart", Toast.LENGTH_LONG).show()
     }
 
     private  fun initRecyclerView()

@@ -4,9 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mealsonwheels.R
 import com.mealsonwheels.adapter.FoodCategoryAdapter
@@ -47,7 +47,7 @@ class HomeFragment : Fragment(), FoodCategoryAdapter.CategoryClickListener {
 
 
     override fun onCategoryClicked(view: View, category: FoodCategory) {
-        Toast.makeText(activity,"Item Clikced "+category.name,Toast.LENGTH_LONG).show()
+        findNavController().navigate(HomeFragmentDirections.actionNavHomeToFoodItemFragment(category.id))
     }
 
     private  fun initRecyclerView()

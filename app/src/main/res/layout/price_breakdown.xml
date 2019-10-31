@@ -1,0 +1,199 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/white"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/NormalTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sub_total"
+                android:textAlignment="textStart">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtSubTotal"
+                style="@style/NormalTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sub_total_amount"
+                android:textAlignment="textEnd">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/NormalTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/vat"
+                android:textAlignment="textStart">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtVat"
+                style="@style/NormalTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/vat_value"
+                android:textAlignment="textEnd">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/NormalTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/service_charge"
+                android:textAlignment="textStart">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtServiceCharge"
+                style="@style/NormalTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/service_charge_amount"
+                android:textAlignment="textEnd">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/NormalTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/deliver_fee"
+                android:textAlignment="textStart">
+
+            </TextView>
+
+            <TextView
+                style="@style/NormalTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/deliver_fee_amount"
+                android:textAlignment="textEnd">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/NormalTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/discount"
+                android:textAlignment="textStart"
+                android:textColor="@color/red_dark">
+
+            </TextView>
+
+            <TextView
+                style="@style/NormalTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/discout_text"
+                android:textAlignment="textEnd"
+                android:textColor="@color/red_dark">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/divider_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/NormalTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/total"
+                android:textAlignment="textStart"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                style="@style/NormalTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sub_total_amount"
+                android:textAlignment="textEnd"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
