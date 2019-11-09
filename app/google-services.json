@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "590893604135",
+    "firebase_url": "https://meals-on-wheels-988e8.firebaseio.com",
+    "project_id": "meals-on-wheels-988e8",
+    "storage_bucket": "meals-on-wheels-988e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590893604135:android:c93c4810dfb262ad031d02",
+        "android_client_info": {
+          "package_name": "com.mealsonwheels"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590893604135-ksa4ui76i3j714ei4kl0ut77s3sd91gi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mealsonwheels",
+            "certificate_hash": "2eb927c32b4857b27d2499c2b9e1654a00d2b2d0"
+          }
+        },
+        {
+          "client_id": "590893604135-acf147giv5643jurmqr9pcegnvfpkcfj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2efOy82mfuchCY8qmozajIV2JWSR6PZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "590893604135-acf147giv5643jurmqr9pcegnvfpkcfj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

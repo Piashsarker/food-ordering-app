@@ -5,7 +5,7 @@
     app:startDestination="@id/signinFragment">
     <fragment
         android:id="@+id/signinFragment"
-        android:name="com.mealsonwheels.ui.auth.LoginFragment"
+        android:name="com.mealsonwheels.ui.auth.login.LoginFragment"
         android:label="fragment_signin"
         tools:layout="@layout/fragment_login" >
         <action
@@ -14,7 +14,7 @@
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.mealsonwheels.ui.auth.SignUpFragment"
+        android:name="com.mealsonwheels.ui.auth.signup.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" />
 </navigation>

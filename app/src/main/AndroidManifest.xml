@@ -14,15 +14,15 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".ui.DashboardActivity"
-            android:label="@string/title_activity_dashboard">
-        </activity>
-        <activity
-            android:name=".ui.auth.MainActivity"
+            android:label="@string/title_activity_dashboard"
             android:theme="@style/AppThemeFullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity android:name=".ui.auth.MainActivity">
         </activity>
 
         <meta-data

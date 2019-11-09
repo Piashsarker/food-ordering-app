@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/HeaderText"
+        android:id="@+id/navUserName"
         android:text="@string/profile_name"
         android:textColor="@color/white" />
 
@@ -20,6 +21,7 @@
         android:layout_width="match_parent"
         android:fontFamily="@font/roboto_mono"
         android:text="@string/user_name"
+        android:id="@+id/navEmail"
         android:textColor="@color/white"
         android:layout_height="wrap_content"
         android:textSize="@dimen/second_header_text_size" />
